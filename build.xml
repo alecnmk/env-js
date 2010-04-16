@@ -366,7 +366,7 @@
     </target>
 
     <!-- BUILD HTML IMPLEMENTATIOM -->
-    <target name="html" depends="env-platforms">
+    <target name="html" depends="env-platforms, parser, xhr, window, local-settings">
         <mkdir dir="${DIST_DIR}" />
         <echo message=""/>
         <echo message="Building ${HTML_DIST}" />
